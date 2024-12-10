@@ -1,0 +1,1803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-bottom">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <h6 class="modal-title inner-text" id="staticBackdropLabel">
+                        <span>
+                            <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                            Paneer Tikka Dry
+                        </span>
+                    </h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+                    <div class="popup-product-item">
+
+                        <div class="custom-checkbox-new addon addon_stand_color addonchange">
+
+                            <label class="custom-checkbox-right d-flex justify-content-between" for="checkbox_250 Gm">
+                                <p class="popup-product-label mb-1">250 Gm</p>
+                                <p class="popup-product-label-right  variationprice_148381208"
+                                    data-variation_price="125.00">
+                                    <span class=""><span class="rs-font-family">₹</span>125.00</span>
+                                    <input type="radio" id="checkbox_250 Gm" name="variationitem[]" data-id="148381208"
+                                        class="removeaddon variationradio" checked="checked" value="148381208"
+                                        data-title="250 Gm" data-price="125.00" data-is_discount_display="0"
+                                        required="">
+                                </p>
+                            </label>
+                        </div>
+
+
+                        <div class="custom-checkbox-new addon addon_stand_color addonchange">
+
+                            <label class="custom-checkbox-right d-flex justify-content-between" for="checkbox_500 Gm">
+                                <p class="popup-product-label mb-1">500 Gm</p>
+                                <p class="popup-product-label-right  variationprice_148381209"
+                                    data-variation_price="230.00">
+                                    <span class=""><span class="rs-font-family">₹</span>230.00</span>
+                                    <input type="radio" id="checkbox_500 Gm" name="variationitem[]" data-id="148381209"
+                                        class="removeaddon variationradio" value="148381209" data-title="500 Gm"
+                                        data-price="230.00" data-is_discount_display="0" required="">
+                                </p>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="cart-bottom pb-3 px-3">
+                    <div class="cart-bottom-curv shadow "></div>
+                    <div class="cart-customisable-txt">Kaiu Kofta </div>
+                    <div class="d-flex justify-content-between">
+
+
+                        <div class="counter-container  ">
+
+                            <div class="buttons float-start text-center d-flex  active">
+                                <button onclick="decrement('card-2')">-</button>
+                                <div id="counter-card-2">1</div>
+                                <button onclick="increment('card-2')">+</button>
+                            </div>
+                        </div>
+
+
+                        <div class="cart-customisable d-flex  ">
+                            <button type="submit"
+                                class="btn btn-sm text-decoration-none btn-link checkout checkout-active ml-auto ripple-effect colorcodeclass submitbtnform">Add
+                                - <span class="rs-font-family">₹</span> <span class="final_price">145.00</span></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="top-header py-2">
+        <div class="contact ">
+            <a href="tel:+9428949590" class="text-decoration-none fw-bold ps-4  "><span><i class="fa fa-phone"
+                        style="font-size:18px;color:rgb(9, 10, 9)"></i></span> 9428949590</a>
+        </div>
+    </div>
+    <div class="header-menu  shadow">
+        <div class="logo ms-3">
+            <img src="image/logo.jpg" alt="" width="150px">
+        </div>
+    </div>
+    <main>
+
+        <div class="row mt-2 mx-1">
+            <div class="col col-12  col-sm-12 col-md-3 col-lg-3 col-xl-2 col-left-sidebar ">
+                <div id="list-example  rounded-0 border-0" class="list-group ms-2">
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#indian-starter" >
+                        Indian Starter
+                    </a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#kofta">Kofta</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#salad">Salad Papad</a>
+                    <a  class="nav-link parentcat   list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#biryani">Rice-Biryani</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#dal">Special Dal</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#main-courses">Veg Main Coures</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#paneer">Paneer Main Coures</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#indian-bread">Indian Bread</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#thali">Thali</a>
+                    <a class="list-group-item list-group-item-action border-0 border-bottom rounded-0"
+                        href="#veg-thali">Veg Thali</a>
+                </div>
+                <div class="btn  btn-dark menu-btn  mt-5">
+                    <div class="menu">
+                        <span><img src="image/menu-icon.svg" alt="" class="me-2"></span> Menu
+                    </div>
+
+
+                    <div class="close"><i class="fa fa-close" style="font-size:18px;color:rgb(239, 230, 230)"></i></div>
+                </div>
+
+            </div>
+
+            <div class="col col-12 col-sm-12 col-md-9 col-lg-9 col-xl-10 col-right-list body mb-5">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+                    tabindex="0">
+                    <div class="item-list-main">
+                        <div class="category-sec " id="indian-starter">
+
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Indian-Starter</h6>
+                                <div class="row mx-2 m-auto">
+
+                                    <div class="card col-lg-5 mt-4" id="card-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card col-lg-5 mt-4" id="card-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="kofta">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Kofta</h6>
+                                <div class="row m-auto">
+                                    <div class="card col-lg-5 mt-4" id="kofta-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="kofta-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="kofta-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="salad">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Salad/Papad</h6>
+                                <div class="row m-auto">
+                                    <div class="card col-lg-5 mt-4" id="salad-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="salad-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card col-lg-5 mt-4" id="salad-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="salad-4">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="salad-5">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="salad-6">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="salad-7">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="biryani">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Rice/Biryani</h6>
+                                <div class="row m-auto">
+                                    <div class="card col-lg-5 mt-4" id="rice-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card col-lg-5 mt-4" id="rice-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-4">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-5">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-6">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-7">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-8">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="rice-9">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="dal">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Special/Dal</h6>
+                                <div class="row m-auto">
+                                    <div class="card col-lg-5 mt-4" id="dal-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="dal-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="category-sec" id="main-courses">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Veg Main Courses</h6>
+                                <div class="row m-auto">
+                                    <div class="card col-lg-5 mt-4" id="Veg-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-4">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-5">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-6">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-7">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-8">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-10">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="Veg-11">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="paneer">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Paneer Main Courses</h6>
+                                <div class="row m-auto">
+                                    <div class="card col-lg-5 mt-4" id="paneer-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="paneer-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card col-lg-5 mt-4" id="paneer-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="paneer-4">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="paneer-5">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="indian-bread">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Indian Bread</h6>
+                                <div class="row  m-auto">
+
+
+                                    <div class="card col-lg-5 mt-4" id="bread-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="bread-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="bread-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="bread-4">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="bread-5">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <p>Start From</p>
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <p class="l-text pt-2">Customization </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec" id="thali">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Thali</h6>
+                                <div class="row  m-auto">
+                                    <div class="card col-lg-5 mt-4" id="thali-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                                <div class="mid mt-3">
+                                                    <p>Veg Sabji, Paneer Sabji, Dal Tadka, 3 Chapati, Rice Butter Milk,
+                                                        Sweet</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end  mt-4 ">
+                                                    <!-- <p>Start From</p> -->
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <!-- <p class="l-text pt-2">Customization </p> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="thali-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                                <div class="mid mt-3">
+                                                    <p>Veg Sabji, Paneer Sabji, Dal Tadka, 3 Chapati, Rice Butter Milk,
+                                                        Sweet</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end  mt-4 ">
+                                                    <!-- <p>Start From</p> -->
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <!-- <p class="l-text pt-2">Customization </p> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card col-lg-5 mt-4" id="thali-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                                <div class="mid mt-3">
+                                                    <p>Veg Sabji, Paneer Sabji, Dal Tadka, 3 Chapati, Rice Butter Milk,
+                                                        Sweet</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end  mt-4 ">
+                                                    <!-- <p>Start From</p> -->
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <!-- <p class="l-text pt-2">Customization </p> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="category-sec " id="veg-thali">
+                            <div class="order mb-4">
+                                <h6 class="order-title  py-2">Veg Thali</h6>
+                                <div class="row  m-auto">
+                                    <div class="card col-lg-5 mt-4" id="veg-thali-1">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <!-- <p>Start From</p> -->
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <!-- <p class="l-text pt-2">Customization </p> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="veg-thali-2">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <!-- <p>Start From</p> -->
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <!-- <p class="l-text pt-2">Customization </p> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="card col-lg-5 mt-4" id="veg-thali-3">
+                                        <div class="card-body row  p-2 justify-content-space-between">
+                                            <div class="left col-8 col-lg-8 ">
+                                                <h6 class="inner-text ">
+                                                    <span>
+                                                        <img src="image/ic_veg.svg" class="mb-1" alt="">&nbsp;
+                                                        Paneer Tikka Dry
+                                                    </span>
+                                                </h6>
+                                            </div>
+
+                                            <div class="right col-4 col-lg-3 col-sm-3 bottom float-end">
+
+                                                <div class="counter-container text-end ">
+                                                    <!-- <p>Start From</p> -->
+                                                    <p class="rupees">Rs 135.00</p>
+
+                                                    <button class="btn  add" class="btn btn-primary"
+                                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add
+                                                        +</button>
+
+
+                                                    <!-- <p class="l-text pt-2">Customization </p> -->
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cpy-right ">
+            <div class="container">
+                <div class="col-lg-9 m-auto">
+                    <div class="row ">
+                        <div class="text col-12 col-lg-9 ">
+                            <p><span><i class="fa fa-map-marker"></i></span>36/37, 12th Cross Rd, Neeladri Nagar,
+                                Electronics City Phase 1, Electronic City, Bengaluru, Karnataka 560100</p>
+                        </div>
+
+                        <div class="nav-   col-lg-3 col-12">
+                            <a href="">About</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="cart-img btn btn-success">
+            <div class="text   position-absolute  ">1</div>
+            <i class="fa fa-shopping-bag"></i>
+        </div>
+    </main>
+
+</body>
+<script>
+    $(document).ready(function () {
+        // Initially hide the close button
+        $(".close").hide();
+
+        // Apply behavior for screens with max-width of 768px
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            // Menu button click functionality
+            $(".menu-btn").click(function () {
+                $(".list-group").toggle(); // Toggle the visibility of the list group
+                $(".col-right-list").css("opacity", $(".list-group").is(":visible") ? "0.5" : "1"); // Adjust opacity
+                $(".close").toggle(); // Show/hide the close button
+                $(".menu").toggle(); // Show/hide the menu
+            });
+
+            // Close button and list group item click functionality
+            $(".list-group-item").click(function () {
+                $(".list-group").hide(); // Hide the list group
+                $(".close").hide(); // Hide the close button
+                $(".menu").show(); // Show the menu
+                $(".col-right-list").css("opacity", "1"); // Reset opacity
+            });
+        }
+    });
+</script>
+
+
+<script>
+
+    //scrolling section 
+    // Function to enable smooth scrolling
+    function scrollToSection(event) {
+        // Prevent the default behavior (jumping without smoothness)
+        event.preventDefault();
+
+        // Extract the target section ID from the href attribute
+        const targetId = event.target.getAttribute("href").substring(1);
+
+        // Locate the target section using its ID
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            // Scroll the target element into view with smooth animation
+            targetElement.scrollIntoView({
+                behavior: "smooth", // Ensures the scrolling animation is smooth
+                block: "start"      // Aligns the target to the top of the viewport
+            });
+        }
+    }
+    //scroling section end
+
+
+    function add(cardId) {
+        const card = document.getElementById(cardId);
+        const productName = card.getAttribute('data-name');
+        const productPrice = card.getAttribute('data-price');
+
+        // Modal mein data populate karna
+        document.getElementById('modal-name').textContent = productName;
+        document.getElementById('modal-price-value').textContent = productPrice;
+
+        const addButton = card.querySelector(".btn.add");
+        const buttonsDiv = card.querySelector(".buttons");
+
+        // Counter buttons dikhana aur "Add" button chhupana
+        addButton.classList.add("d-none");
+        buttonsDiv.classList.remove("d-none");
+    }
+
+    function increment(cardId) {
+        const counter = document.getElementById(`counter-${cardId}`);
+        let count = parseInt(counter.innerText);
+        count++;
+        counter.innerText = count;
+    }
+
+    function decrement(cardId) {
+        const counter = document.getElementById(`counter-${cardId}`);
+        let count = parseInt(counter.innerText);
+        if (count > 1) {
+            count--;
+            counter.innerText = count;
+        } else {
+            // Counter buttons chhupana aur "Add" button dikhana
+            const card = document.getElementById(cardId);
+            const addButton = card.querySelector(".btn.add");
+            const buttonsDiv = card.querySelector(".buttons");
+
+            addButton.classList.remove("d-none");
+            buttonsDiv.classList.add("d-none");
+        }
+    }
+
+
+</script>
+
+</html>
